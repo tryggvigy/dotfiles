@@ -43,10 +43,6 @@ brew install homebrew/dupes/screen
 # run this script when this file changes guy.
 brew install entr
 
-# github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
-brew install hub
-
-
 # mtr - ping & traceroute. best.
 brew install mtr
 
@@ -57,9 +53,8 @@ brew install mtr
 
 
 # Install other useful binaries
-brew install the_silver_searcher
+brew install sift
 brew install fzf
-
 brew install git
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
@@ -68,12 +63,9 @@ brew install rename
 brew install tree
 brew install zopfli
 brew install ffmpeg --with-libvpx
-
+brew install tmux
 brew install terminal-notifier
-
-brew install android-platform-tools
-brew install pidcat   # colored logcat guy
-
+brew install htop
 brew install zsh
 
 # Remove outdated versions from the cellar

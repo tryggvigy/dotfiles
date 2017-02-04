@@ -216,9 +216,9 @@ git update-index --untracked-cache
 # prezto and antigen communties also have great stuff
 #   github.com/sorin-ionescu/prezto/blob/master/modules/utility/init.zsh
 
-# set up osx defaults
+# set up macos defaults
 #   maybe something else in here https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
-sh .osx
+sh .macos
 
 # setup and run Rescuetime!
 
