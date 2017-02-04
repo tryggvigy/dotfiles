@@ -50,14 +50,34 @@ function clone() {
     cd $(basename ${1%.*})
     yarn install
 }
-alias push="git push"
+alias gp="git push"
+alias gl="git pull"
+alias gc="git commit -v"
+alias gc!='git commit -v --amend'
+alias gd="git diff"
+alias gco="git checkout"
+alias gcm="git checkout master"
+alias grbi="git rebase -i"
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
+# Git logs
+alias glg='git log --stat'
+alias glgp='git log --stat -p'
+alias glgg='git log --graph'
+alias glgga='git log --graph --decorate --all'
+alias glgm='git log --graph --max-count=10'
+alias glo='git log --oneline --decorate'
+alias glol="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glola="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+alias glog='git log --oneline --decorate --graph'
+alias gloga='git log --oneline --decorate --graph --all'
+
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
-alias master="git checkout master"
 
 # Networking. IP address, dig, DNS
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
