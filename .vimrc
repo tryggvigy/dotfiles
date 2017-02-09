@@ -444,13 +444,6 @@ augroup filetype_coffee
 augroup END
 " }}}
 
-" Fish {{{
-augroup filetype_fish
-  autocmd!
-  au BufRead,BufNewFile *.fish set ft=fish
-augroup END
-" }}}
-
 " Handlebars {{{
 augroup filetype_hbs
   autocmd!
@@ -512,13 +505,6 @@ augroup END
 augroup filetype_xml
   autocmd!
   au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
-augroup END
-" }}}
-
-" ZSH {{{
-augroup filetype_zsh
-  autocmd!
-  au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 augroup END
 " }}}
 
@@ -640,7 +626,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/fish.vim',   { 'for': 'fish' }
 Plug 'vim-scripts/jade.vim',   { 'for': 'jade' }
 Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'

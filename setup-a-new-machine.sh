@@ -120,7 +120,7 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 ./brew.sh
 ./brew-cask.sh
 
-# `sudo gem install tmuxinator` manually.
+`sudo gem install tmuxinator` #manually.
 
 ### end of homebrew
 ##############################################################################################################
@@ -238,6 +238,9 @@ sh .macos
 
 # symlink it up!
 ./symlink-setup.sh
+
+# install node through nvm.
+# https://github.com/creationix/nvm
 
 # add manual symlink for .ssh/config and probably .config/fish
 

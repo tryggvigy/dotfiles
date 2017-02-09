@@ -66,7 +66,6 @@ brew install ffmpeg --with-libvpx
 brew install tmux
 brew install terminal-notifier
 brew install htop
-brew install fish
 
 # Remove outdated versions from the cellar
 brew cleanup

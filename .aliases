@@ -20,7 +20,7 @@ alias brwe=brew  #typos
 
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
-alias ag='ag -f --hidden'
+alias ag='ag --follow --hidden --color-path "1;37" --color-line-number "32;53" --color-match "31:54"'
 
 ###
 # time to upgrade `ls`
@@ -51,6 +51,7 @@ function clone() {
     yarn install
 }
 alias gp="git push"
+alias gst="git status"
 alias gl="git pull"
 alias gc="git commit -v"
 alias gc!='git commit -v --amend'
@@ -94,6 +95,9 @@ alias free_diskspace_report="diskspace_report"
 # Shortcuts
 alias g="git"
 alias v="vim"
+alias f="fzf"
+alias m="tmuxinator"
+alias mk="killall tmux"
 alias ungz="gunzip -k"
 
 # File size
