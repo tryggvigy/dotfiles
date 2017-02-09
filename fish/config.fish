@@ -1,7 +1,7 @@
 set default_user "paulirish"
 set default_machine "paulirish-macbookair2"
 
-source ~/.config/fish/path.fish
+# source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
@@ -9,9 +9,11 @@ source ~/.config/fish/functions.fish
 source ~/.extra.fish
 
 # THEME PURE #
-set fish_function_path /Users/paulirish/.config/fish/functions/pure $fish_function_path
+set fish_function_path /Users/tryggvi/.config/fish/functions/pure $fish_function_path
 
-export GOPATH=$HOME/.go/
+
+export EDITOR=vim
+
 
 # Completions
 function make_completion --argument-names alias command

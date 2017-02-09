@@ -174,7 +174,7 @@ function nullify() {
 # visual studio code. a la `subl`
 function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCodeInsiders" --args $*; }
 
-# `shellswitch [bash |zsh]`
+# `shellswitch [bash |fish]`
 #   Must be in /etc/shells
 shellswitch () {
 	chsh -s $(brew --prefix)/bin/$1

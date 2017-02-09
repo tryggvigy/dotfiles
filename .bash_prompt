@@ -1,7 +1,7 @@
 # This prompt inspired by gf3, sindresorhus, alrra, and mathiasbynens.
 # but customized to me. <3
 
-default_username='paulirish'
+default_username='tryggvi'
 
 
 if which thefuck > /dev/null; then
@@ -10,10 +10,6 @@ fi;
 
 # Automatically trim long paths in the prompt (requires Bash 4.x)
 PROMPT_DIRTRIM=2
-
-if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
-    return 1 2> /dev/null || exit 1;
-fi;
 
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
@@ -48,7 +44,7 @@ set_prompts() {
         red=$(tput setaf 124)
         violet=$(tput setaf 61)
         magenta=$(tput setaf 9)
-        white=$(tput setaf 8)
+        white=$(tput setaf 7)
         yellow=$(tput setaf 136)
 
     else

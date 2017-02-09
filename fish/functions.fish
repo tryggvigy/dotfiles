@@ -55,7 +55,7 @@ function sudo!!
 end
 
 
-# `shellswitch [bash|zsh|fish]`
+# `shellswitch [bash|fish]`
 function shellswitch
 	chsh -s (brew --prefix)/bin/$argv
 end

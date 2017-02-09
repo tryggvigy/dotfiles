@@ -53,7 +53,7 @@ brew install mtr
 
 
 # Install other useful binaries
-brew install sift
+brew install the_silver_searcher
 brew install fzf
 brew install git
 brew install imagemagick --with-webp
@@ -66,7 +66,7 @@ brew install ffmpeg --with-libvpx
 brew install tmux
 brew install terminal-notifier
 brew install htop
-brew install zsh
+brew install fish
 
 # Remove outdated versions from the cellar
 brew cleanup

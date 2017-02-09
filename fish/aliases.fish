@@ -25,18 +25,26 @@ alias where=which # sometimes i forget
 
 # typos
 alias brwe=brew  
-alias gti=git
 
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
-alias push="git push"
+alias gp="git push"
+alias ga="git add"
+alias gc="git commit"
+alias gst="git status"
+alias gd="git diff"
+alias grbi="git rebase -i"
+alias gl="git pull"
+alias gcm="git checkout master"
+alias gcm="git checkout master"
+alias gco="git checkout"
 
 
 # `cat` with beautiful colors. requires Pygments installed.
 # 							   sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-alias ag='ag --follow --hidden'
+alias ag='ag --follow --hidden --color-path "1;37" --color-line-number "32;53" --color-match "31:54"'
 
 alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
@@ -55,6 +63,8 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 # Shortcuts
 alias g="git"
 alias v="vim"
+alias f="fzf"
+alias m="tmuxinator"
 alias ungz="gunzip -k"
 
 # File size

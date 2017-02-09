@@ -17,7 +17,8 @@ brew cask install licecap
 brew cask install rescuetime
 brew cask install flux
 brew cask install alfred
-brew cask instal docker
+brew cask install docker
+brew cask install spotify
 
 # dev
 brew cask install iterm2

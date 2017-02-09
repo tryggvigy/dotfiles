@@ -95,3 +95,6 @@
 	prune = true
 [diff]
 	compactionHeuristic = true
+[user]
+	email = tryggvi@spotify.com
+	name = Tryggvi Gylfason
