@@ -51,6 +51,7 @@ function clone() {
     yarn install
 }
 alias gp="git push"
+alias ga="git add"
 alias gst="git status"
 alias gl="git pull"
 alias gc="git commit -v"
@@ -92,12 +93,17 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
 
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # Shortcuts
 alias g="git"
 alias v="vim"
 alias f="fzf"
 alias m="tmuxinator"
 alias mk="killall tmux"
+alias s="subl"
+alias a="atom"
+alias l='ls -al'
 alias ungz="gunzip -k"
 
 # File size
@@ -115,3 +121,6 @@ alias emptytrash=" \
 # Update installed Ruby gems, Homebrew, npm, and their installed packages
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
+
+
+alias note="cd me/notes/ && vim \"$(date +%Y-%m-%d).txt\""
