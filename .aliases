@@ -62,6 +62,7 @@ alias gcm="git checkout master"
 alias grbi="git rebase -i"
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias gpuo="git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }')"
 # Git logs
 alias glg='git log --stat'
 alias glgp='git log --stat -p'
