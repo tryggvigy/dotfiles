@@ -24,6 +24,7 @@ brew cask install spotify
 brew cask install iterm2
 brew cask install sublime-text
 brew cask install atom
+brew cask install gitify
 
 # fun
 brew cask install miro-video-converter
