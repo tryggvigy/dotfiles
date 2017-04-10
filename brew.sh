@@ -39,6 +39,13 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
+# Install emacs.
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+brew linkapps emacs-plus
+
+# Install spacemacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 # run this script when this file changes guy.
 brew install entr
