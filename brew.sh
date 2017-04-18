@@ -40,6 +40,7 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 # Install emacs.
+# brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
 brew linkapps emacs-plus
