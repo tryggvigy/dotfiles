@@ -7,11 +7,6 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
-# to help sublimelinter etc with finding my PATHS
-case $- in
-   *i*) source ~/.extra
-esac
-
 # generic colouriser
 GRC=`which grc`
 if [ "$TERM" != dumb ] && [ -n "$GRC" ]
@@ -107,7 +102,7 @@ fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type __git_complete &> /dev/null; then
-    __git_complete g __git_main
+   __git_complete g __git_main
 fi;
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
