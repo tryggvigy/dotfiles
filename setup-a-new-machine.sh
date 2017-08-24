@@ -120,8 +120,6 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 ./brew.sh
 ./brew-cask.sh
 
-`sudo gem install tmuxinator` #manually.
-
 ### end of homebrew
 ##############################################################################################################
 
