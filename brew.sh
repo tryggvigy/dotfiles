@@ -39,15 +39,6 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
-# Install emacs.
-# brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
-brew tap d12frosted/emacs-plus
-brew install emacs-plus
-brew linkapps emacs-plus
-
-# Install spacemacs
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
 # run this script when this file changes guy.
 brew install entr
 
@@ -65,6 +56,7 @@ brew install the_silver_searcher
 brew install fzf
 brew install git
 brew install imagemagick --with-webp
+# TODO: I think the best way to install nvm nowadays is with nvm
 brew install node # This installs `npm` too using the recommended installation method
 brew install pv
 brew install rename

@@ -11,8 +11,7 @@ sudo periodic daily weekly monthly
 brew cleanup -n  # to see what would get cleaned up
 brew cleanup   # to do it.
 
-cask cleanup
-
+brew cask cleanup
 
 ~/Library/Caches/Google/Chrome Canary/Default
 ~/Library/Caches/Google/Chrome/Default

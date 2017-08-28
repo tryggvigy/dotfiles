@@ -5,16 +5,11 @@
 
 # this is safe to run multiple times and will prompt you about anything unclear
 
-
 # this is a messy edit of alrra's nice work here:
 #   https://raw.githubusercontent.com/alrra/dotfiles/master/os/create_symbolic_links.sh
 #   it should and needs to be improved to be less of a hack.
 
-
-
 # jump down to line ~140 for the start.
-
-
 
 #
 # utils !!!

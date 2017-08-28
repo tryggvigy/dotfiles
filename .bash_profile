@@ -61,17 +61,11 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # ^ the only downside with this is [up] on the readline will go over all history not just this bash session.
 
-export EDITOR="vim"
-
 ##
 ## hooking in other apps…
 ##
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 
 
 # z beats cd most of the time. `brew install z`
@@ -93,11 +87,6 @@ fi;
 # homebrew completion
 if  which brew > /dev/null; then
     source "$(brew --prefix)/etc/bash_completion.d/brew"
-fi;
-
-# hub completion
-if  which hub > /dev/null; then
-    source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh";
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`

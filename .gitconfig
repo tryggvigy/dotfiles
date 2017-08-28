@@ -1,10 +1,6 @@
 [alias]
 	c = commit -am
-	up = pull
-	p = push
-	s = status
 	sclone = clone --depth=1
-	co = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
@@ -13,8 +9,6 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
-	reup = rebase-update # depot_tools specific
-
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
@@ -22,7 +16,7 @@
 [pager]
 	# insanely beautiful diffs ==> npm install -g diff-so-fancy
 	cdiff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+	cshow = diff-so-fancy | less --tabs=4 -RFX
 
 [interactive]
   # disabled until github.com/so-fancy/diff-so-fancy/pull/172 is resolved :(
@@ -52,7 +46,7 @@
 	changed = green
 	untracked = cyan
 
-# git mergetool
+# git mergetool. TODO: Actually make opendiff work or choose another.
 [merge]
 	tool = opendiff
 
