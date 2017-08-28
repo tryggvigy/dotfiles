@@ -178,16 +178,6 @@ augroup general_config
   " map <silent> <leader>qs <Esc>:let @/ = ""<CR>
   " }}}
 
-  " Vim on the iPad {{{
-  if &term == "xterm-ipad"
-    nnoremap <Tab> <Esc>
-    vnoremap <Tab> <Esc>gV
-    onoremap <Tab> <Esc>
-    inoremap <Tab> <Esc>`^
-    inoremap <Leader><Tab> <Tab>
-  endif
-  " }}}
-
   " Remap keys for auto-completion menu {{{
   inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<CR>"
   inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
@@ -437,27 +427,6 @@ augroup filetype_clojure
 augroup END
 " }}}
 
-" Coffee {{{
-augroup filetype_coffee
-  autocmd!
-  au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-augroup END
-" }}}
-
-" Handlebars {{{
-augroup filetype_hbs
-  autocmd!
-  au BufRead,BufNewFile *.hbs,*.handlebars,*.hbs.erb,*.handlebars.erb setl ft=mustache syntax=mustache
-augroup END
-" }}}
-
-" Jade {{{
-augroup filetype_jade
-  autocmd!
-  au BufRead,BufNewFile *.jade set ft=jade syntax=jade
-augroup END
-" }}}
-
 " JavaScript {{{
 augroup filetype_javascript
   autocmd!
@@ -479,28 +448,6 @@ augroup filetype_markdown
 augroup END
 " }}}
 
-" Nu {{{
-augroup filetype_nu
-  autocmd!
-  au BufNewFile,BufRead *.nu,*.nujson,Nukefile setf nu
-augroup END
-" }}}
-
-" Ruby {{{
-augroup filetype_ruby
-  autocmd!
-
-  au BufRead,BufNewFile Rakefile,Capfile,Gemfile,.autotest,.irbrc,*.treetop,*.tt set ft=ruby syntax=ruby
-
-  " Ruby.vim {{{
-  let ruby_operators = 1
-  let ruby_space_errors = 1
-  let ruby_fold = 1
-  " }}}
-augroup END
-" }}}
-
-" }}}
 " XML {{{
 augroup filetype_xml
   autocmd!
@@ -569,13 +516,6 @@ augroup easy_align_config
 augroup END
 " }}}
 
-" Notes.vim {{{
-augroup notes_config
-  autocmd!
-  let g:notes_directories = ['~/Dropbox/Notes']
-augroup END
-" }}}
-
 " RainbowParenthesis.vim {{{
 augroup rainbow_parenthesis_config
   autocmd!
@@ -606,7 +546,6 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-emoji'
 Plug 'junegunn/goyo.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'msanders/snipmate.vim'
@@ -626,11 +565,8 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/jade.vim',   { 'for': 'jade' }
-Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
 
 call plug#end()
 " }}}
