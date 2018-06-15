@@ -48,7 +48,10 @@ export HISTTIMEFORMAT='%F %T '
 export HISTCONTROL="erasedups:ignoreboth"       # no duplicate entries
 export HISTSIZE=100000                          # big big history (default is 500)
 export HISTFILESIZE=$HISTSIZE                   # big big history
-type shopt &> /dev/null && shopt -s histappend  # append to history, don't overwrite it
+shopt -s histappend                             # append to history, don't overwrite it
+shopt -s histreedit                             # reedit a history substitution line if it failed
+shopt -s histverify                             # edit a recalled history line before executing
+
 
 # Don't record some commands
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
@@ -114,3 +117,5 @@ shopt -s dirspell 2> /dev/null
 
 # Turn on recursive globbing (enables ** to recurse all directories)
 shopt -s globstar 2> /dev/null
+
+export PATH="$HOME/.cargo/bin:$PATH"
